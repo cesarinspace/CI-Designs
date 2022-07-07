@@ -1,0 +1,313 @@
+*{
+    margin:0;
+}
+
+/*header*/
+header{
+    width: 100%;
+    position: fixed;
+    display:flex;
+    font-family: 'Poppins', sans-serif;
+    min-height: 70px;
+    background-color: #111;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    z-index: 1;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+}
+
+nav a{
+    text-decoration: none;
+    color:#acacac;
+    padding-right: 10px;
+}
+
+nav a:hover{
+    color:white;
+}
+
+@media (max-width:700px){
+    header{
+        flex-direction:column;
+    }
+
+    nav{
+        padding: 10px 0px;
+    }
+}
+
+/*screen */
+.separate{
+    height: 100px;
+    background-color: rgb(249, 252, 255);
+}
+
+.screen1{
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10vh;
+    margin-top: auto;
+    background-color: rgb(249, 252, 255);
+}
+
+.screen1 img{
+    width: 90%;
+}
+
+/*topics*/
+.topics{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(249, 252, 255);
+}
+
+.cards-topics{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    background-color: rgb(249, 252, 255);
+}
+
+.topics img{
+    width:30%;
+}
+
+.card{
+    font-family: 'Baloo Paaji 2', cursive;
+    text-align: justify;
+    max-width: fit-content;
+    padding: 1vh;
+    margin: 2vh;
+}
+
+button{
+    margin: 20px;
+    text-align: center;
+}
+
+.custom-btn{
+    width: 130px;
+    height: 40px;
+    color: #fff;
+    border-radius: 5px;
+    padding: 10px 25px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+     7px 7px 20px 0px rgba(0,0,0,.1),
+     4px 4px 5px 0px rgba(0,0,0,.1);
+    outline: none;
+}
+
+.btn-8 {
+    background-color: #f0ecfc;
+    background-image: linear-gradient(315deg, #f0ecfc 0%, #c797eb 74%);
+    line-height: 42px;
+    padding: 0;
+    border: none;
+  }
+  .btn-8 span {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+  .btn-8:before,
+  .btn-8:after {
+    position: absolute;
+    content: "";
+    right: 0;
+    bottom: 0;
+    background: #c797eb;
+    transition: all 0.3s ease;
+  }
+  .btn-8:before{
+     height: 0%;
+     width: 2px;
+  }
+  .btn-8:after {
+    width: 0%;
+    height: 2px;
+  }
+  .btn-8:hover:before {
+    height: 100%;
+  }
+  .btn-8:hover:after {
+    width: 100%;
+  }
+  .btn-8:hover{
+    background: transparent;
+  }
+  .btn-8 span:hover{
+    color: #c797eb;
+  }
+  .btn-8 span:before,
+  .btn-8 span:after {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 0;
+    background: #c797eb;
+    transition: all 0.3s ease;
+  }
+  .btn-8 span:before {
+    width: 2px;
+    height: 0%;
+  }
+  .btn-8 span:after {
+    height: 2px;
+    width: 0%;
+  }
+  .btn-8 span:hover:before {
+    height: 100%;
+  }
+  .btn-8 span:hover:after {
+    width: 100%;
+  }
+
+.card-text{
+    text-align: justify;
+}
+
+/*works*/
+.works{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to top, black 0%, rgb(249, 252, 255) 90%);
+}
+
+.works img{
+    width:30%;
+}
+
+.carrousel{
+  width: 100%;
+  background-color: black;
+}
+
+.carrousel img{
+  height:80vh;
+}
+
+.conteCarrousel{
+  width: 100%;
+  height: 80vh;
+  overflow: hidden;
+  text-align: center;
+}
+
+.itemCarrousel{
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.itemCarrouselTarjeta{
+  width: 100%;
+  height: 100%;
+}
+
+.conteCarrouselController{
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  background-color: black;
+}
+
+.conteCarrouselController > a{
+  text-decoration: none;
+  font-size: 4em;
+  color: #fafafa;
+}
+
+.about{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(to top, rgb(249, 252, 255) 85%, black 100%);
+}
+
+.about img{
+  width:100%;
+}
+
+/**contacto**/
+.contact{
+  font-size: 1.5rem;
+  font-weight: 550;
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+  padding: 20px;
+  background-image: linear-gradient(to top, black 85%, rgb(249, 252, 255) 100%);
+  color:#fafafa;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width:700px){
+  .container{
+      flex-direction:column;
+  }
+
+  .container{
+      padding: 10px 0px;
+  }
+}
+#spotify,
+#twitter,
+#github,
+#facebook {
+  font-size: 2em;
+  background-color: black;
+  color: #fff;
+  box-shadow: 1px 1px 1px #3b123b80, 5px 1px 6px #3b123b80,
+    1px 1px 5px #3b123b80, 1px 1px 2px #3b123b80, inset 1px 1px 5px #3b123b80,
+    inset 1px 1px 5px #3b123b80, inset 1px 1px 5px #3b123b80,
+    inset 1px 1px 5px #3b123b80;
+  border-radius: 13px;
+  padding: 11px 19px;
+  margin: 0 40px;
+  animation: animate 3s linear infinite;
+  text-shadow: 0 0 50px #799ac3, 0 0 100px #799ac3, 0 0 150px #799ac3,
+    0 0 200px #799ac3;
+}
+#twitter {
+  animation-delay: 0.3s;
+}
+#facebook {
+  animation-delay: 0.7s;
+}
+#github {
+  animation-delay: 0.1s;
+}
+
+@keyframes animate {
+  from {
+    filter: hue-rotate(0deg);
+  }
+  to {
+    filter: hue-rotate(360deg);
+  }
+}
